@@ -6,6 +6,19 @@
     <edmx:Diagrams>
       <Diagram DiagramId="3ed517b3308d4643881eeb12374b320b" Name="Diagram1">
         <EntityTypeShape EntityType="ChatterModel.Chat" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChatterModel.AspNetRole" Width="1.5" PointX="3.25" PointY="2" />
+        <EntityTypeShape EntityType="ChatterModel.AspNetUserClaim" Width="1.5" PointX="7.75" PointY="3.125" />
+        <EntityTypeShape EntityType="ChatterModel.AspNetUserLogin" Width="1.5" PointX="7.75" PointY="0.5" />
+        <EntityTypeShape EntityType="ChatterModel.AspNetUser" Width="1.5" PointX="5.5" PointY="0.875" />
+        <AssociationConnector Association="ChatterModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="ChatterModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="ChatterModel.AspNetUserRoles" />
+        <AssociationConnector Association="ChatterModel.FK_AspNetUsers_AspNetUsers" />
+        <AssociationConnector Association="ChatterModel.FK_AspNetUsers_AspNetUsers1" />
+        <AssociationConnector Association="ChatterModel.FK_AspNetUsers_AspNetUsers2" />
+        <AssociationConnector Association="ChatterModel.FK_AspNetUsers_AspNetUsers3" />
+        <AssociationConnector Association="ChatterModel.FK_AspNetUsers_AspNetUsers4" />
+        <AssociationConnector Association="ChatterModel.FK_Chat_AspNetUsers" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
