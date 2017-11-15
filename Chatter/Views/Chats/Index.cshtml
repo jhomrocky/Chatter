@@ -9,7 +9,41 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+
+<div id="response"></div>
+<button id="getchats" class="btn btn-primary"> Get Chats</button>
+
+
+@section Scripts {
+    <script>
+        var jsonTest = { "firstName": "Bob", "lastName": "Sauce", "children": [{ "firstName": "Barbie", "age": 19 }, { "firstName": "Ron", "age": null }] }
+
+        //now some jQuery
+        $("#response").text(jsonTest.children[1].firstName);
+
+    </script>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.ChatMessage)
@@ -42,4 +76,4 @@
     </tr>
 }
 
-</table>
+</table>*@
